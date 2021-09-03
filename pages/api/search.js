@@ -6,7 +6,9 @@ export default function helloAPI(req, res) {
   let posts;
 
   if (process.env.NODE_ENV === "production") {
-    //
+    // Fetch from the cache folder
+
+    posts = require("../../cache/data.js").posts;
   } else {
     const files = fs.readdirSync(path.join("posts"));
 
