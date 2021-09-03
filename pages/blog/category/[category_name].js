@@ -9,7 +9,9 @@ import CategoryList from "@/components/CategoryList";
 const BlogPage = ({ posts, categoryName, categories }) => {
   return (
     <Layout title={`Blog Posts in ${categoryName} | DevSpace Blog`}>
-      <h1 className="text-5xl font-bold border-b-4 p-5">Latest Posts</h1>
+      <h1 className="text-5xl font-bold border-b-4 p-5">
+        Category: {categoryName}
+      </h1>
       <div className="flex flex-col lg:flex-row justify-between mx-4">
         <div className="w-full lg:w-3/4 lg:mr-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
