@@ -18,7 +18,7 @@ const PostPage = ({
       <div className="block ml-4 md:hidden">
         <GoBackButton />
       </div>
-      <div className="w-full px-4 md:px-8 lg:px-10 py-6 bg-white rounded-lg shadow-md mt-6">
+      <div className="w-full px-4 md:px-8 lg:px-10 bg-white my-6">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center mt-4">
           <h1 className="text-3xl md:text-5xl mb-7">{title}</h1>
           <CategoryLabel>{category}</CategoryLabel>

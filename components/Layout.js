@@ -14,7 +14,7 @@ const Layout = ({ children, title, keywords, description }) => {
       </Head>
       <Header />
       <Search />
-      <main className="container mx-auto my-7">{children}</main>
+      <main className="container mx-auto">{children}</main>
       <Footer />
     </div>
   );
